@@ -29,7 +29,7 @@ BOT_TOKEN = "8538798053:AAGIQT6fFNekXhB_9U7mJXghXFm3BNzLnws" # Apna Token Sahi K
 
 OWNER_ID = 6068463116
 OWNER_USERNAME = "Synaxchatrobot"
-PUBLIC_GROUP = "@synaxchatgroup"
+PUBLIC_GROUP = "@synaxLookup"
 
 UPI_ID = "AbhishekXSynax@fam"
 
@@ -264,7 +264,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     if not await is_joined(context, uid):
         kb = InlineKeyboardMarkup([
-            [InlineKeyboardButton("🔗 Join Group", url="https://t.me/Synaxchatgroup")],
+            [InlineKeyboardButton("🔗 Join Group", url="https://t.me/SynaxLookup")],
             [InlineKeyboardButton("✅ Check Join", callback_data="check_join")]
         ])
         await update.message.reply_text(
@@ -947,7 +947,7 @@ async def extract(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # Check Join
     if not await is_joined(context, uid):
         kb = InlineKeyboardMarkup([
-            [InlineKeyboardButton("🔗 Join Group", url="https://t.me/Synaxchatgroup")],
+            [InlineKeyboardButton("🔗 Join Group", url="https://t.me/SynaxLookup")],
             [InlineKeyboardButton("✅ Check Join", callback_data="check_join")]
         ])
         await update.message.reply_text(
